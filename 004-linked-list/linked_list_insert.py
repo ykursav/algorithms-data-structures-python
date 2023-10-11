@@ -92,11 +92,11 @@ class LinkedList:
         temp_after = self.get(index)
         if not temp_after:
             return False
-        print("here")
         temp_pre = self.get(index - 1)
 
         new_node.next = temp_after
         temp_pre.next = new_node
+        self.length += 1
 
         return True
 
